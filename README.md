@@ -58,12 +58,15 @@ The Blog API is a powerful Spring Boot application designed to empower users to 
 
 3. **Set Up GitHub OAuth:**
     - Register an OAuth app on GitHub (under your account settings).
-    - Update the `application.yml` with your `clientId` and `clientSecret` values.
+    - Update the `application.properties` with your `clientId` and `clientSecret` values.
 
 4. **Build and Run the Application:**
     ```bash
-    ./mvnw clean install
-    ./mvnw spring-boot:run
+    1. Maven clean
+    2. Maven Build
+    3. Modify Run Configuration and set the 
+              jwt.secret=***** 
+        environment variable.
     ```
 
 5. **Access the Application:**
